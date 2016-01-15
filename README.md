@@ -20,10 +20,12 @@ The module comes as an board populated SMD components but _without headers_ so i
 The board supports I<sup>2</sup>C interface so you need just 2 wires, power supply and ground to connect it to Arduino.
 
 Arduino to SL030 wiring:
+```
 	A4/SDA 3
 	A5/SCL 4
 	GND    6
 	3V3    1
+```
 
 Here's the board connected to Arduino Uno:
 ![SL030 module with Arduino](https://github.com/ls6/Arduino-and-NFC/blob/master/pics/sl30Arduino.jpg)
@@ -172,4 +174,4 @@ Here's the full example code for your convenience:
       };
     }
 ```
-Good luck and have fun! If you have some improvements to this code for [Marc's](https://github.com/marcboon/RFIDuino) (preferably) or [my](https://github.com/ls6/RFIDuino) repository on git hub and help pushing this library forward.
+Good luck and have fun! If you have some improvements to this code for [Marc's](https://github.com/marcboon/RFIDuino) on git hub and help pushing this library forward.
