@@ -10,7 +10,7 @@ Just in case, before we proceed, I'm going to make a disclaimer here. The NFC te
 
 An NFC (Mifare) module from Stronglink. I've chosen the SL030 because I wanted to work with 3.3V supply voltage but you can have a 5V version as well. Here you can see how big it is:
 
-{% img /images/sl030.jpg %}
+![SL030 module](https://github.com/ls6/Arduino-and-NFC/blob/master/pics/sl030.jpg)
 <small>As with most of casual bloggers you have to excuse the quality of pictures taken with a phone.</small>
 
 The module comes as an board populated SMD components but _without headers_ so if you don't have spare ones laying around make sure you get them separately or you will have to solder wires directly to the board.
@@ -26,25 +26,25 @@ Arduino to SL030 wiring:
 	3V3    1
 
 Here's the board connected to Arduino Uno:
-{% img ../../../../../../images/sl30Arduino.jpg %}
+![SL030 module with Arduino](https://github.com/ls6/Arduino-and-NFC/blob/master/pics/sl30Arduino.jpg)
 
 And to a [JeeNode](http://jeelabs.net/projects/hardware/wiki/JeeNode) (the reason I needed a 3.3V module is that this is the voltage the JeeNode operates on): 
-{% img ../../../../../../images/sl30JeeNode.jpg %}
+![SL030 module with JeeNode](https://github.com/ls6/Arduino-and-NFC/blob/master/pics/sl30JeeNode.jpg)
 
 ##Software
 
 This NFC module is supported by the RFIDuino libraries hosted [here](http://github.com/marcboon/RFIDuino/) written by [Marc Boon](http://marcboon.com/) (thank you, Marc!). The SL030 module works with the library that Marc called SL018. On the screenshot below you can see both the simple example code (available in the "examples" subdirectory) as well as the result of scanning a number of tags.
-<a href="../../../../../../images/JeeNodeOneReader.png" target="_blank">{% img ../../../../../../images/JeeNodeOneReader.png %}</a>
+![SL030 working](https://github.com/ls6/Arduino-and-NFC/blob/master/pics/JeeNodeOneReader.png)
 
 ##What's next?
 
-Well, that was pretty easy, wasn't it? I consider this part a warm-up and "check if everything is ok" step. My final goal is to [connect two readers](/blog/2012/02/27/arduino-and-nfc-part-2/) to a single Arduino and possibly connect it to internet. If you get bored before part 2 appears, take a look at Marc's code, there is a lot of comments that explain what is going on. You might also find the [SL030 User Manual](http://www.stronglink.cn/download/SL030-User-Manual.pdf) useful.
+Well, that was pretty easy, wasn't it? I consider this part a warm-up and "check if everything is ok" step. My final goal is to connect two readers to a single Arduino and possibly connect it to internet.
 
 P.S. The JeeNode is a pretty cool device. You get an Arduino + Radio for less.
 
-# Part 2
+# Part 2: Two readers in parallel
 
-This is the continuation of the story of connecting unexpensive NFC readers to Arduino. [Part 1](/blog/2011/07/21/arduino-and-nfc-part-1/) explains how a Mifare reader from Stronglink can be easily connected. This time I'll show you how to connect more than one of them.
+This is the continuation of the story of connecting unexpensive NFC readers to Arduino. Part 1 explains how a Mifare reader from Stronglink can be easily connected. This time I'll show you how to connect more than one of them.
 
 ##Hardware configuration
 
